@@ -1,14 +1,14 @@
 @media screen and (max-width: 480px) {
 	.container {
-		width: 480px;
+		width: 100%;
 	}
 	.row {
 		flex-direction: column;
 		margin: 0 auto;
 		width: 100%;
 	}
-	.lessons {
-		padding-bottom: 3rem;
+	.col {
+		margin-bottom: 3rem;
 	}
 	.lessons, .steps, .why-us {
 		margin: 0;
@@ -16,11 +16,18 @@
 	.lessons .col, .steps .col, .why-us .col {
 		width: 100%;
 	}
+	.steps {
+		padding-bottom: 0;
+	}
 	.why-us {
 		background-color: #222222;
 		padding-top: 3rem;
 	}
-	.why-us .col-left {
-		margin-bottom: 40px;
+}
+
+@media screen and (min-width: 481px) {
+	.container {
+		width: 100%;
+		max-width: 1140px;
 	}
 }
